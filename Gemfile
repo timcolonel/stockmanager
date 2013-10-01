@@ -44,11 +44,16 @@ end
 # Use debugger
 # gem 'debugger', group: [:development, :test]
 
-
-gem 'yahoofinance'
-
 gem 'bootstrap-sass'
 
 gem 'rails_admin'
 
 gem 'cancan'
+
+gem 'devise'
+
+gem 'mysql2', '0.3.11'
+
+gem 'json'
+
+gem 'whenever'
