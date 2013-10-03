@@ -11,19 +11,19 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20131001160815) do
+ActiveRecord::Schema.define(version: 20131002033724) do
+
+  create_table "stock_quotes", force: true do |t|
+    t.float    "value"
+    t.integer  "stock_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "stock_stocks", force: true do |t|
     t.string   "name"
     t.string   "symbol"
     t.boolean  "watch"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  create_table "stock_values", force: true do |t|
-    t.float    "value"
-    t.integer  "stock_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
